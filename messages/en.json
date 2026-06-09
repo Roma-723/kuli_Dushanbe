@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "attractions": "Attractions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to Aquapark",
+    "subtitle": "The best summer destination for families"
+  },
+  "home": {
+    "title": "Aquapark",
+    "welcome": "Welcome"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a modern water park with unique attractions.",
+    "location": "Our Location"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "Water park photos"
+  },
+  "attractions": {
+    "title": "Attractions",
+    "subtitle": "Best attractions at Aquapark Kuli Dushanbe",
+    "description": "Main attractions",
+    "items": {
+      "slide1": { "name": "Ring Slide", "desc": "Thrilling ring slide for adults and kids — incredible speed and unforgettable fun!" },
+      "slide2": { "name": "Kids Zone", "desc": "Special area for young children with safe slides and clean water." },
+      "slide3": { "name": "Wave Pool", "desc": "Huge wave pool — feel the real ocean right in the heart of the city!" },
+      "slide4": { "name": "High Slides", "desc": "Tall colorful slides for thrill-seekers and adrenaline lovers." },
+      "slide5": { "name": "Relaxation Pool", "desc": "Large calm pool perfect for relaxing with the whole family." }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with us"
+  },
+  "language": "Language",
+  "pricing": {
+    "title": "Pricing",
+    "hours": "Working hours: 10:00 — 18:00",
+    "adult": "Adults",
+    "child": "Children",
+    "currency": "somoni",
+    "adultPrice": "230",
+    "childPrice": "200",
+    "infant": "Infants (under 3)",
+    "free": "Free"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "phone": "Phone",
+    "follow": "Follow us"
+  }
+}
