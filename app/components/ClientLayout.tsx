@@ -29,7 +29,6 @@ export default function ClientLayout({
   const navLinks = [
     { href: "/", label: t("home") },
     { href: "/about", label: t("about") },
-    { href: "/gallery", label: t("gallery") },
     { href: "/attractions", label: t("attractions") },
     { href: "/contact", label: t("contact") },
   ];
