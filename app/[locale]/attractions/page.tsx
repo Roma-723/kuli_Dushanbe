@@ -39,7 +39,6 @@ export default function Attractions() {
               style={{ animationDelay: `${index * 150}ms` }}
               className="group flex flex-col rounded-2xl overflow-hidden bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
             >
-              {/* Контейнери сурат бо эффект */}
               <div className="relative h-60 w-full overflow-hidden bg-slate-100">
                 <Image
                   src={`/images/${images[index]}`}
