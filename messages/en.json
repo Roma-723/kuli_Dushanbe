@@ -78,5 +78,33 @@
     "follow": "Follow us",
     "description": "Unforgettable moments at the heart of the capital's entertainment.",
     "contacts": "Contacts"
+  },
+  "rules": {
+    "title": "Rules of Conduct",
+    "required": "Required",
+    "prohibited": "Prohibited",
+    "responsibility": "Responsibility",
+    "items": {
+      "req1": "Children under 16 are not allowed without adult supervision",
+      "req2": "Shower is required before using attractions and pools",
+      "req3": "Swimming and sliding strictly in swimwear only",
+      "req4": "Children must wear waterproof diapers in pools and slides",
+      "req5": "Hair must be tied up when swimming or going down slides",
+      "req6": "Please queue at ticket office and attractions",
+      "req7": "Do not leave children unattended",
+      "req8": "CCTV cameras are operating throughout the premises",
+      "proh1": "Bringing your own food and drinks is prohibited",
+      "proh2": "It is prohibited to use rides while under the influence of alcohol or drugs",
+      "proh3": "Running and overtaking on the stairs of pools and slides is prohibited",
+      "proh4": "Do not jump into the pool head first",
+      "proh5": "No pets allowed",
+      "proh6": "Smoking in designated areas only",
+      "proh7": "Glass containers, sharp and dangerous objects are prohibited",
+      "proh8": "Photography with professional equipment without admin consent is prohibited",
+      "resp1": "Visitors are responsible for their own safety",
+      "resp2": "Visitor must compensate for any damage caused to aquapark property",
+      "resp3": "The aquapark administration is not responsible for personal belongings left unattended",
+      "resp4": "Visitors who violate the rules may be removed from the aquapark"
+    }
   }
 }
