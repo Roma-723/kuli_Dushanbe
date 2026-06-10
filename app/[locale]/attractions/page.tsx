@@ -11,7 +11,6 @@ export default function Attractions() {
 
   return (
     <div className="bg-slate-50/50 min-h-screen pb-20">
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-[#0f172a] via-[#1e2d4a] to-[#0f172a] py-20 text-center overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute -top-12 -left-12 w-64 h-64 rounded-full bg-cyan-400 blur-3xl"></div>
