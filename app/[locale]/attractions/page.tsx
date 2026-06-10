@@ -68,7 +68,6 @@ export default function Attractions() {
                   </p>
                 </div>
                 
-                {/* Тугмаи ороишӣ дар поён */}
                 <div className="mt-5 pt-4 border-t border-slate-50 flex items-center text-sm font-bold text-blue-600 group-hover:text-blue-500 transition-colors">
                   <span>{t("more") || "Муфассал"}</span>
                   <svg className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -82,7 +81,6 @@ export default function Attractions() {
         </div>
       </section>
 
-      {/* Аниматсияҳои CSS бо Tailwind */}
       <style jsx global>{`
         @keyframes fadeInUp {
           from {
