@@ -16,8 +16,22 @@
   },
   "about": {
     "title": "About Us",
+    "subtitle": "Aquapark Kuli Dushanbe — the best family recreation destination",
     "description": "We are a modern water park with unique attractions.",
-    "location": "Our Location"
+    "location": "Our Location",
+    "since": "Operating since 2022",
+    "visitors": "Over 100,000 guests",
+    "visitorsDesc": "Over the years we have delighted more than 100,000 guests, and that number keeps growing every day.",
+    "team": "Our Team",
+    "teamDesc": "Our friendly and experienced staff are always ready to help. Your happiness is our top priority.",
+    "mission": "Our Mission",
+    "missionDesc": "To provide safe, joyful and unforgettable experiences for every guest — from children to adults.",
+    "stat1": "Since",
+    "stat1value": "2022",
+    "stat2": "Guests",
+    "stat2value": "100,000+",
+    "stat3": "Attractions",
+    "stat3value": "15+"
   },
   "gallery": {
     "title": "Gallery",
@@ -33,11 +47,19 @@
       "slide3": { "name": "Wave Pool", "desc": "Huge wave pool — feel the real ocean right in the heart of the city!" },
       "slide4": { "name": "High Slides", "desc": "Tall colorful slides for thrill-seekers and adrenaline lovers." },
       "slide5": { "name": "Relaxation Pool", "desc": "Large calm pool perfect for relaxing with the whole family." }
-    }
+    },
+    "more": "Read more"
   },
   "contact": {
     "title": "Contact",
-    "description": "Get in touch with us"
+    "subtitle": "Get in touch with us",
+    "description": "Get in touch with us",
+    "name": "Your name",
+    "phone": "Phone number",
+    "message": "Message",
+    "send": "Send",
+    "success": "Your message has been received! We will reply soon.",
+    "error": "An error occurred. Please try again."
   },
   "language": "Language",
   "pricing": {
@@ -54,6 +76,8 @@
   "footer": {
     "rights": "All rights reserved",
     "phone": "Phone",
-    "follow": "Follow us"
+    "follow": "Follow us",
+    "description": "Unforgettable moments at the heart of the capital's entertainment.",
+    "contacts": "Contacts"
   }
 }
