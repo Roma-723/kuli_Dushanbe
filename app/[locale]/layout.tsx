@@ -25,15 +25,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title,
     description,
-    metadataBase: new URL('https://kulidushanbe.tj'),
+    metadataBase: new URL('https://kuli-dushanbe.vercel.app'),
     openGraph: {
       title,
       description,
-      url: 'https://kulidushanbe.tj',
+      url: 'https://kuli-dushanbe.vercel.app',
       siteName: titles[locale] || titles['tj'],
       images: [
         {
-          url: '/images/img1.png',
+          url: 'https://kuli-dushanbe.vercel.app/images/img1.png',
           width: 1200,
           height: 630,
           alt: title,
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title,
       description,
-      images: ['/images/img1.png'],
+      images: ['https://kuli-dushanbe.vercel.app/images/img1.png'],
     },
     icons: {
       icon: '/image.png',
