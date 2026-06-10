@@ -51,7 +51,6 @@ export default function Attractions() {
                 </span>
               </div>
 
-              {/* Қисми матнӣ */}
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl font-bold text-[#1e2d4a] group-hover:text-blue-600 transition-colors duration-200 mb-2.5 line-clamp-1">

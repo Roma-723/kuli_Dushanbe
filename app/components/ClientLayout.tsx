@@ -87,7 +87,6 @@ export default function ClientLayout({
             })}
           </nav>
 
-          {/* Language Switcher - Desktop */}
           <div className="hidden md:flex items-center gap-1">
             {locales.map((loc) => (
               <button
@@ -138,7 +137,6 @@ export default function ClientLayout({
 
           <div className="fixed top-0 right-0 h-full w-72 bg-white shadow-2xl z-50 flex flex-col animate-in slide-in-from-right duration-300">
             <div className="flex items-center justify-between p-5 border-b border-gray-50">
-              {/* Language Switcher - Mobile */}
               <div className="flex items-center gap-1">
                 {locales.map((loc) => (
                   <button

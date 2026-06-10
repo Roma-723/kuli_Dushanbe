@@ -12,20 +12,14 @@ export default function Contact() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   
   const [touched, setTouched] = useState({ name: false, phone: false, message: false });
-
-  // Регекс барои санҷиши формат: Ҳатман бояд бо + оғоз шавад ва танҳо рақамҳо бошанд (мисол: +992935555555)
-  // Шаблон: + дар аввал ва аз 9 то 14 рақам паси он
   const phoneRegex = /^\+[1-9]\d{8,14}$/;
 
-  // Функцияи санҷиши рақами Тоҷикистон (+992 ва 9 рақами дигар)
-  // Агар танҳо рақами ТҶ лозим бошад, ин регексро истифода баред: /^\+992\d{9}$/
   const isPhoneValid = (num: string) => phoneRegex.test(num.trim());
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setTouched({ name: true, phone: true, message: true });
 
-    // Агар рақам ё дигар майдонҳо хато бошанд, форма равон карда намешавад
     if (!name.trim() || !isPhoneValid(phone) || !message.trim()) return;
 
     setLoading(true);
@@ -65,7 +59,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-b from-slate-50 to-slate-100/80 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-[calc(100vh-80px)] bg-linear-to-b from-slate-50 to-slate-100/80 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 bg-white p-8 sm:p-10 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 opacity-0 animate-[fadeIn_0.5s_ease-out_forwards]">
         
         <div className="text-center space-y-2">
@@ -79,7 +73,6 @@ export default function Contact() {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5 mt-8" noValidate>
-          {/* ИНПУТИ НОМ */}
           <div className="space-y-1.5">
             <label className="block text-sm font-semibold text-slate-700">
               {t("name")}
@@ -105,7 +98,6 @@ export default function Contact() {
             )}
           </div>
 
-          {/* ИНПУТИ ТЕЛЕФОН (Бо валидатсияи +) */}
           <div className="space-y-1.5">
             <label className="block text-sm font-semibold text-slate-700">
               {t("phone")}
@@ -115,7 +107,6 @@ export default function Contact() {
               value={phone}
               onChange={(e) => {
                 const val = e.target.value;
-                // Барои осонӣ: агар корбар рақам навиштанро сар кунаду "+" нагузорад, автомат худмонда кунад
                 if (val && !val.startsWith("+")) {
                   setPhone("+" + val);
                 } else {
@@ -142,7 +133,6 @@ export default function Contact() {
             )}
           </div>
 
-          {/* ИНПУТИ ПАЁМ */}
           <div className="space-y-1.5">
             <label className="block text-sm font-semibold text-slate-700">
               {t("message")}
@@ -168,7 +158,6 @@ export default function Contact() {
             )}
           </div>
 
-          {/* Уведомления */}
           {status === "success" && (
             <div className="bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3.5 rounded-xl text-sm font-medium flex items-center gap-2 animate-[zoomIn_0.3s_ease-out]">
               <svg className="w-5 h-5 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>

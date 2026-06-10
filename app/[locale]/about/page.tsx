@@ -7,7 +7,6 @@ export default function About() {
 
   return (
     <div className="bg-slate-50/30 min-h-screen pb-20">
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-[#0f172a] to-[#1e2d4a] py-24 text-center overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-blue-500 rounded-full blur-3xl" />
@@ -25,7 +24,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats Bar */}
       <section className="max-w-5xl mx-auto px-4 -translate-y-10 z-20 relative">
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl shadow-xl shadow-blue-600/20 p-8 md:p-10">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-white/20 text-center text-white">
@@ -45,11 +43,9 @@ export default function About() {
         </div>
       </section>
 
-      {/* Content Cards */}
       <section className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          {/* Card 1 - Since 2022 */}
           <div 
             style={{ animationDelay: "100ms" }}
             className="group relative bg-white rounded-2xl p-8 border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-500/50 opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]"
@@ -68,7 +64,6 @@ export default function About() {
             </p>
           </div>
 
-          {/* Card 2 - Team */}
           <div 
             style={{ animationDelay: "250ms" }}
             className="group relative bg-white rounded-2xl p-8 border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-500/50 opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]"
@@ -88,7 +83,6 @@ export default function About() {
             </p>
           </div>
 
-          {/* Card 3 - Mission */}
           <div 
             style={{ animationDelay: "400ms" }}
             className="group relative bg-white rounded-2xl p-8 border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-500/50 opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]"
@@ -109,7 +103,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Google Maps Section */}
       <section className="max-w-6xl mx-auto px-4 mt-12">
         <div className="text-center space-y-2 mb-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#1e2d4a]">
@@ -130,7 +123,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Аниматсияҳо бо истифода аз Стилҳои Global */}
       <style jsx global>{`
         @keyframes fadeInUp {
           from {

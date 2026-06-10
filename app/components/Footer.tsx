@@ -8,8 +8,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-slate-200 py-12 px-6 border-t border-slate-800">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-          
-          {/* Блок 1 - Логотип ва Бренд */}
+
           <div className="flex flex-col items-start space-y-4">
             <div className="bg-white/5 p-2 rounded-xl backdrop-blur-sm border border-white/10 shadow-md">
               <Image
@@ -30,14 +29,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Блок 2 - Алоқа ва Маълумот */}
           <div className="flex flex-col space-y-4">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
               {t("contacts") || "Алоқа"}
             </h4>
-            
+
             <div className="space-y-3">
-              {/* Телефон */}
               <a
                 href="tel:+992446013030"
                 className="group flex items-center space-x-3 text-slate-300 hover:text-cyan-400 transition-all duration-300"
@@ -48,7 +45,6 @@ export default function Footer() {
                 <span className="font-medium text-sm sm:text-base">+992 44 601 3030</span>
               </a>
 
-              {/* Email */}
               <a
                 href="mailto:dushanbelake@gmail.com"
                 className="group flex items-center space-x-3 text-slate-300 hover:text-cyan-400 transition-all duration-300"
@@ -61,13 +57,11 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Блок 3 - Шабакаҳои иҷтимоӣ */}
           <div className="flex flex-col space-y-4">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
               {t("follow")}
             </h4>
             <div className="flex gap-3">
-              {/* Instagram */}
               <a
                 href="https://www.instagram.com/kuli_dushanbe/"
                 target="_blank"
@@ -78,7 +72,6 @@ export default function Footer() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
               </a>
 
-              {/* Facebook */}
               <a
                 href="https://www.facebook.com/dushanbelake"
                 target="_blank"
@@ -93,7 +86,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Хатти поёнӣ */}
         <div className="border-t border-slate-800 pt-6 mt-6 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-slate-500 space-y-3 sm:space-y-0">
           <div>
             © {new Date().getFullYear()} Аквапарк Кӯли Душанбе. {t("rights")}
