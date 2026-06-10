@@ -48,10 +48,8 @@ export default function Attractions() {
                   sizes="(max-w-7xl) 33vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
                 />
-                {/* Эффекти соя дар рӯи сурат */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
-                {/* Нишони болои сурат */}
                 <span className="absolute top-4 left-4 bg-white/80 backdrop-blur-md text-[#1e2d4a] text-xs font-bold px-3 py-1.5 rounded-lg shadow-xs tracking-wide">
                   Кӯли Душанбе
                 </span>
