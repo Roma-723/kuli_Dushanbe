@@ -15,12 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     en: 'Aquapark Kuli Dushanbe'
   }
   const descriptions: Record<string, string> = {
-    tj: 'Беҳтарин ҷои истироҳат барои тамоми оила дар Душанбе. Аз соли 2022.',
+    tj: 'Беҳтарин ҷои истироҳат барои тамоми оила дар Душанбе. Аз соли 2022. Зиёда аз 100 000 меҳмон.',
     ru: 'Лучшее место отдыха для всей семьи в Душанбе. Работаем с 2022 года.',
     en: 'Best family recreation destination in Dushanbe. Operating since 2022.'
   }
-  const title = titles[locale] || titles['tj']
-  const description = descriptions[locale] || descriptions['tj']
+  const title = titles[locale] || 'Аквапарки Кӯли Душанбе'
+  const description = descriptions[locale] || 'Беҳтарин ҷои истироҳат барои тамоми оила дар Душанбе. Аз соли 2022. Зиёда аз 100 000 меҳмон.'
 
   return {
     title,
