@@ -7,8 +7,8 @@ export default function About() {
   const tRules = useTranslations("rules");
 
   return (
-    <div className="bg-slate-50/30 min-h-screen pb-20">
-      <section className="relative bg-gradient-to-b from-[#0f172a] to-[#1e2d4a] py-24 text-center overflow-hidden">
+    <div className="min-h-screen pb-20">
+      <section className="relative bg-gradient-to-b  py-24 text-center overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-blue-500 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-cyan-500 rounded-full blur-3xl" />
@@ -99,7 +99,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="bg-[#f0f7ff] py-16 px-4 mt-0">
+      <section className="py-16 px-4 mt-0">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-[#1e2d4a] text-center mb-12">
             {tRules("title")}
@@ -134,7 +134,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-
+4
             <div className="rounded-2xl shadow-md overflow-hidden mb-8">
               <div className="bg-[#dc2626] text-white px-6 py-4 rounded-t-2xl">
                 <div className="flex items-center justify-center gap-3">
@@ -192,7 +192,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       <section className="max-w-6xl mx-auto px-4 mt-12">
         <div className="text-center space-y-2 mb-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#1e2d4a]">

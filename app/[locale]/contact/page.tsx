@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 
 export default function Contact() {
@@ -52,6 +52,13 @@ export default function Contact() {
     setTouched((prev) => ({ ...prev, [field]: true }));
   };
 
+  useEffect(() => {
+    if (status === "success") {
+      const timer = setTimeout(() => setStatus("idle"), 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
   const errors = {
     name: touched.name && !name.trim(),
     phone: touched.phone && (!phone.trim() || !isPhoneValid(phone)),
@@ -61,7 +68,18 @@ export default function Contact() {
   return (
     <div className="min-h-[calc(100vh-80px)] bg-linear-to-b from-slate-50 to-slate-100/80 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 bg-white p-8 sm:p-10 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 opacity-0 animate-[fadeIn_0.5s_ease-out_forwards]">
-        
+
+        {status === "success" ? (
+          <div className="flex flex-col items-center justify-center py-16 gap-4">
+            <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center">
+              <svg className="w-8 h-8 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+              </svg>
+            </div>
+            <p className="text-emerald-700 font-semibold text-lg text-center">{t("success")}</p>
+          </div>
+        ) : (
+          <>
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-extrabold text-[#1e2d4a] tracking-tight">
             {t("title")}
@@ -158,13 +176,6 @@ export default function Contact() {
             )}
           </div>
 
-          {status === "success" && (
-            <div className="bg-emerald-50 border border-emerald-200 text-emerald-700 px-4 py-3.5 rounded-xl text-sm font-medium flex items-center gap-2 animate-[zoomIn_0.3s_ease-out]">
-              <svg className="w-5 h-5 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
-              <span>{t("success")}</span>
-            </div>
-          )}
-
           {status === "error" && (
             <div className="bg-rose-50 border border-rose-200 text-rose-700 px-4 py-3.5 rounded-xl text-sm font-medium flex items-center gap-2 animate-[zoomIn_0.3s_ease-out]">
               <svg className="w-5 h-5 text-rose-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd"/></svg>
@@ -190,6 +201,8 @@ export default function Contact() {
             )}
           </button>
         </form>
+          </>
+        )}
       </div>
 
       <style jsx global>{`

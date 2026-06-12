@@ -58,7 +58,8 @@
     "message": "Message",
     "send": "Send",
     "success": "Your message has been received! We will reply soon.",
-    "error": "An error occurred. Please try again."
+    "error": "An error occurred. Please try again.",
+    "error_phone_required": "Please enter your phone number!"
   },
   "language": "Language",
   "pricing": {
