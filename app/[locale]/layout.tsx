@@ -57,25 +57,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function LocaleLayout({
   children,
-  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }>) {
-  const { locale } = await params;
   const messages = await getMessages();
 
   return (
-    <>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `document.documentElement.lang="${locale}";`,
-        }}
-      />
-      <NextIntlClientProvider messages={messages}>
-        <ClientLayout>{children}</ClientLayout>
-        <Footer />
-      </NextIntlClientProvider>
-    </>
+    <NextIntlClientProvider messages={messages}>
+      <ClientLayout>{children}</ClientLayout>
+      <Footer />
+    </NextIntlClientProvider>
   );
 }

@@ -8,95 +8,91 @@ export default function About() {
 
   return (
     <div className="min-h-screen pb-20">
-      <section className="relative bg-gradient-to-b  py-24 text-center overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-0 left-1/4 w-72 h-72 bg-blue-500 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-cyan-500 rounded-full blur-3xl" />
-        </div>
-        
+      <section className="relative py-24 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, #0f2942 0%, #1a4a7a 50%, #0ea5e9 100%)' }}>
+        <div className="absolute top-[-60px] right-[-60px] w-72 h-72 rounded-full opacity-10" style={{background:'#38bdf8'}} />
+        <div className="absolute bottom-[-40px] left-[-40px] w-48 h-48 rounded-full opacity-10" style={{background:'#38bdf8'}} />
+
         <div className="relative z-10 max-w-3xl mx-auto px-4 space-y-4">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight drop-shadow-xs">
+          <h1 className="relative text-5xl font-extrabold text-white mb-3 tracking-tight">
             {t("title")}
           </h1>
-          <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="relative text-blue-200 text-lg max-w-xl mx-auto">
             {t("subtitle")}
           </p>
-          <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full mt-4" />
+          <div className="w-16 h-1 bg-[#38bdf8] mx-auto mt-5 rounded-full" />
         </div>
       </section>
 
       <section className="max-w-5xl mx-auto px-4 -translate-y-10 z-20 relative">
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl shadow-xl shadow-blue-600/20 p-8 md:p-10">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-white/20 text-center text-white">
+        <div className="relative mx-4 sm:mx-8 lg:mx-16 -mt-8 z-10 rounded-2xl shadow-2xl py-10" style={{ background: 'linear-gradient(135deg, #2563EB, #1d4ed8)', backdropFilter: 'blur(10px)' }}>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-blue-400/40 text-center text-white">
             <div className="pt-4 sm:pt-0">
-              <div className="text-4xl font-extrabold tracking-tight">{t("stat1value")}</div>
-              <div className="text-xs sm:text-sm text-blue-100 font-medium uppercase tracking-wider mt-1.5">{t("stat1")}</div>
+              <div className="text-4xl font-black text-white tracking-tight">{t("stat1value")}</div>
+              <div className="text-blue-200 text-xs font-semibold uppercase tracking-widest mt-1">{t("stat1")}</div>
             </div>
             <div className="pt-6 sm:pt-0">
-              <div className="text-4xl font-extrabold tracking-tight">{t("stat2value")}</div>
-              <div className="text-xs sm:text-sm text-blue-100 font-medium uppercase tracking-wider mt-1.5">{t("stat2")}</div>
+              <div className="text-4xl font-black text-white tracking-tight">{t("stat2value")}</div>
+              <div className="text-blue-200 text-xs font-semibold uppercase tracking-widest mt-1">{t("stat2")}</div>
             </div>
             <div className="pt-6 sm:pt-0">
-              <div className="text-4xl font-extrabold tracking-tight">{t("stat3value")}</div>
-              <div className="text-xs sm:text-sm text-blue-100 font-medium uppercase tracking-wider mt-1.5">{t("stat3")}</div>
+              <div className="text-4xl font-black text-white tracking-tight">{t("stat3value")}</div>
+              <div className="text-blue-200 text-xs font-semibold uppercase tracking-widest mt-1">{t("stat3")}</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div 
-            style={{ animationDelay: "100ms" }}
-            className="group relative bg-white rounded-2xl p-8 border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-500/50 opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]"
-          >
-            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <path d="M16 2v4M8 2v4M3 10h18" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-[#1e2d4a] mt-6 transition-colors group-hover:text-blue-600">
-              {t("since")}
-            </h3>
-            <p className="text-slate-500 text-sm mt-3 leading-relaxed">
-              {t("visitorsDesc")}
-            </p>
+      <section className="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div
+          style={{ animationDelay: "100ms" }}
+          className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-xl hover:border-blue-100 hover:-translate-y-1 transition-all duration-300 cursor-default opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]"
+        >
+          <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
           </div>
-          <div 
-            style={{ animationDelay: "250ms" }}
-            className="group relative bg-white rounded-2xl p-8 border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-500/50 opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]"
-          >
-            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-[#1e2d4a] mt-6 transition-colors group-hover:text-blue-600">
-              {t("team")}
-            </h3>
-            <p className="text-slate-500 text-sm mt-3 leading-relaxed">
-              {t("teamDesc")}
-            </p>
+          <h3 className="text-xl font-bold text-[#0f2942] mt-5 mb-2">
+            {t("since")}
+          </h3>
+          <p className="text-gray-500 text-sm leading-relaxed">
+            {t("visitorsDesc")}
+          </p>
+        </div>
+        <div
+          style={{ animationDelay: "250ms" }}
+          className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-xl hover:border-blue-100 hover:-translate-y-1 transition-all duration-300 cursor-default opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]"
+        >
+          <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg>
           </div>
-          <div 
-            style={{ animationDelay: "400ms" }}
-            className="group relative bg-white rounded-2xl p-8 border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-500/50 opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]">
-            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-[#1e2d4a] mt-6 transition-colors group-hover:text-blue-600">
-              {t("mission")}
-            </h3>
-            <p className="text-slate-500 text-sm mt-3 leading-relaxed">
-              {t("missionDesc")}
-            </p>
+          <h3 className="text-xl font-bold text-[#0f2942] mt-5 mb-2">
+            {t("team")}
+          </h3>
+          <p className="text-gray-500 text-sm leading-relaxed">
+            {t("teamDesc")}
+          </p>
+        </div>
+        <div
+          style={{ animationDelay: "400ms" }}
+          className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-xl hover:border-blue-100 hover:-translate-y-1 transition-all duration-300 cursor-default opacity-0 animate-[fadeInUp_0.5s_ease-out_forwards]"
+        >
+          <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
           </div>
+          <h3 className="text-xl font-bold text-[#0f2942] mt-5 mb-2">
+            {t("mission")}
+          </h3>
+          <p className="text-gray-500 text-sm leading-relaxed">
+            {t("missionDesc")}
+          </p>
         </div>
       </section>
       <section className="py-16 px-4 mt-0">
@@ -134,7 +130,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-4
+
             <div className="rounded-2xl shadow-md overflow-hidden mb-8">
               <div className="bg-[#dc2626] text-white px-6 py-4 rounded-t-2xl">
                 <div className="flex items-center justify-center gap-3">

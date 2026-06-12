@@ -21,63 +21,63 @@ export default function PricingSection() {
             <span>{t("hours")}</span>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">          
-          <div className="group bg-white rounded-3xl border border-gray-100/80 p-8 text-center flex flex-col justify-between shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-[#2563EB]" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
+          <div className="group bg-white rounded-3xl p-8 text-center flex flex-col justify-between shadow-sm hover:shadow-[0_20px_40px_rgba(37,99,235,0.12)] hover:scale-[1.03] transition-all duration-300 ease-in-out cursor-pointer relative overflow-hidden border border-gray-100/50 hover:border-blue-200/50">
+            <div className="absolute top-0 left-0 w-full h-1.5 bg-[#2563EB]" />
             <div className="my-auto">
-              <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                <Users size={32} className="text-[#040810]" />
+              <div className="w-16 h-16 bg-blue-50/80 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                <Users size={32} className="text-[#2563EB]" />
               </div>
-              <h3 className="text-xl font-bold text-[#1e2d4a] mt-5">
+              <h3 className="text-lg font-semibold text-[#1e2d4a] mt-6">
                 {t("adult")}
               </h3>
-              <div className="flex items-baseline justify-center gap-1 mt-4">
-                <span className="text-5xl font-extrabold text-[#2563EB] tracking-tight">
+              <div className="flex items-baseline justify-center gap-1 mt-5">
+                <span className="text-5xl font-bold text-[#2563EB] tracking-tight">
                   {t("adultPrice")}
                 </span>
-                <span className="text-lg font-semibold text-gray-500 ml-1">
+                <span className="text-base font-medium text-gray-400 ml-1">
                   {t("currency")}
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="group bg-white rounded-3xl border border-gray-100/80 p-8 text-center flex flex-col justify-between shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-[#F59E0B]" />
-            
+          <div className="group bg-white rounded-3xl p-8 text-center flex flex-col justify-between shadow-sm hover:shadow-[0_20px_40px_rgba(245,158,11,0.12)] hover:scale-[1.03] transition-all duration-300 ease-in-out cursor-pointer relative overflow-hidden border border-gray-100/50 hover:border-amber-200/50">
+            <div className="absolute top-0 left-0 w-full h-1.5 bg-[#F59E0B]" />
+
             <div className="my-auto">
-              <div className="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-amber-50/80 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
                 <Baby size={32} className="text-[#F59E0B]" />
               </div>
-              
-              <h3 className="text-xl font-bold text-[#1e2d4a] mt-5">
+
+              <h3 className="text-lg font-semibold text-[#1e2d4a] mt-6">
                 {t("child")}
               </h3>
-              
-              <div className="flex items-baseline justify-center gap-1 mt-4">
-                <span className="text-5xl font-extrabold text-[#F59E0B] tracking-tight">
+
+              <div className="flex items-baseline justify-center gap-1 mt-5">
+                <span className="text-5xl font-bold text-[#F59E0B] tracking-tight">
                   {t("childPrice")}
                 </span>
-                <span className="text-lg font-semibold text-gray-500 ml-1">
+                <span className="text-base font-medium text-gray-400 ml-1">
                   {t("currency")}
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="group bg-white rounded-3xl border border-emerald-100 p-8 text-center flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden bg-gradient-to-b from-white to-emerald-50/20">
-            <div className="absolute top-0 left-0 w-full h-1 bg-[#10B981]" />
-            
+          <div className="group bg-white rounded-3xl p-8 text-center flex flex-col justify-between shadow-sm hover:shadow-[0_20px_40px_rgba(16,185,129,0.12)] hover:scale-[1.03] transition-all duration-300 ease-in-out cursor-pointer relative overflow-hidden border border-emerald-100/50 hover:border-emerald-200/50 bg-gradient-to-b from-white to-emerald-50/10">
+            <div className="absolute top-0 left-0 w-full h-1.5 bg-[#10B981]" />
+
             <div className="my-auto">
-              <div className="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-emerald-50/80 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
                 <Heart size={32} className="text-[#10B981]" />
               </div>
-              
-              <h3 className="text-xl font-bold text-[#1e2d4a] mt-5">
+
+              <h3 className="text-lg font-semibold text-[#1e2d4a] mt-6">
                 {t("infant") || "То 3-сола"}
               </h3>
-              <div className="mt-4">
-                <span className="inline-block text-4xl font-extrabold text-[#10B981] bg-emerald-50 px-4 py-1.5 rounded-2xl tracking-tight">
+              <div className="mt-5">
+                <span className="inline-block text-4xl font-bold text-[#10B981] bg-emerald-50/60 px-4 py-1.5 rounded-2xl tracking-tight">
                   {t("free") || "Бепул"}
                 </span>
               </div>

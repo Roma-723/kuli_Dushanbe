@@ -50,37 +50,29 @@ export default function ClientLayout({
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50/50">
-      <header className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-gray-100/80 shadow-sm transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
-            <div className="relative w-14 h-14 overflow-hidden rounded-xl border border-gray-100 bg-white p-1 shadow-sm flex items-center justify-center">
-              <Image
-                src="/image.png"
-                alt="Logo"
-                width={56}
-                height={56}
-                className="object-contain drop-shadow-md"
-              />
-            </div>
-          </Link>
+      <header className="flex items-center justify-between px-8 py-3 bg-white border-b border-gray-100">
+        <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
+          <div className="relative w-17 h-17 flex items-center justify-center">
+            <Image
+              src="/image.png"
+              alt="Logo"
+              width={68}
+              height={68}
+              className="object-contain drop-shadow-lg"
+            />
+          </div>
+        </Link>
 
-          <nav className="hidden md:flex items-center gap-8 font-medium text-sm lg:text-base text-[#0f2942]">
+          <nav className="hidden sm:flex items-center gap-10 font-medium text-[15px] text-[#1e2d4a] tracking-wide">
             {navLinks.map((link) => {
               const isActive = isPathActive(link.href);
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative py-2 transition-colors duration-200 hover:text-blue-600 ${
-                    isActive ? "text-blue-600 font-semibold" : "text-gray-600"
-                  }`}
+                  className="relative hover:text-blue-600 transition-colors duration-200 after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
                 >
                   {link.label}
-                  <span
-                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 rounded-full transform origin-left transition-transform duration-200 ${
-                      isActive ? "scale-x-100" : "scale-x-0 hover:scale-x-100"
-                    }`}
-                  />
                 </Link>
               );
             })}
@@ -91,11 +83,7 @@ export default function ClientLayout({
               <button
                 key={loc}
                 onClick={() => switchLocale(loc)}
-                className={`px-2 py-0.5 rounded text-sm font-medium transition-colors ${
-                  locale === loc
-                    ? "bg-blue-600 text-white"
-                    : "text-gray-500 hover:text-blue-600"
-                }`}
+                className={locale === loc ? "px-2.5 py-1 rounded-lg bg-[#2563EB] text-white text-xs font-bold" : "px-2.5 py-1 text-gray-400 hover:text-[#2563EB] text-xs font-semibold transition-colors"}
               >
                 {localeLabels[loc]}
               </button>
@@ -125,7 +113,6 @@ export default function ClientLayout({
               />
             </div>
           </button>
-        </div>
       </header>
       {isOpen && (
         <>
@@ -144,11 +131,7 @@ export default function ClientLayout({
                       switchLocale(loc);
                       closeModal();
                     }}
-                    className={`px-2 py-0.5 rounded text-xs font-medium transition-colors ${
-                      locale === loc
-                        ? "bg-blue-600 text-white"
-                        : "text-gray-500 hover:text-blue-600"
-                    }`}
+                    className={locale === loc ? "px-2.5 py-1 rounded-lg bg-[#2563EB] text-white text-xs font-bold" : "px-2.5 py-1 text-gray-400 hover:text-[#2563EB] text-xs font-semibold transition-colors"}
                   >
                     {localeLabels[loc]}
                   </button>
