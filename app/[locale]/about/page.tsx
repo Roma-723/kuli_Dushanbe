@@ -171,6 +171,7 @@ export default function About() {
               </div>
 
 
+
               
               <div className="bg-white border border-amber-100 rounded-b-2xl p-6">
                 <div className="grid grid-cols-1 gap-3">
