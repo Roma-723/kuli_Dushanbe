@@ -7,7 +7,7 @@ export default function Header() {
       <div className="accent-bar"></div>
       <header className="header">
         <div className="header-content">
-          <div className="brand">
+          <div className="brand"> man karimov yusufjon  
             <img src="/image.png" alt="Logo" className="logo" />
             <span className="brand-name">Brend</span>
           </div>

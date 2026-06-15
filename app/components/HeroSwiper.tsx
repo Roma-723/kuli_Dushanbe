@@ -94,7 +94,6 @@ export default function HeroSwiper() {
             />
           </svg>
         </div>
-
         <div className="swiper-button-next-custom absolute right-4 top-1/2 z-20 -translate-y-1/2 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full items-center justify-center cursor-pointer transition-colors hidden sm:flex">
           <svg
             className="w-6 h-6 text-white"
@@ -117,14 +116,12 @@ export default function HeroSwiper() {
           bottom: 20px;
           z-index: 20;
         }
-
         .swiper-pagination-bullet {
           background-color: rgba(255, 255, 255, 0.5);
           width: 10px;
           height: 10px;
           opacity: 1;
         }
-
         .swiper-pagination-bullet-active {
           background-color: #2563eb;
         }
