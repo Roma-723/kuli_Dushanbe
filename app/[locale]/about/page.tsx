@@ -169,6 +169,7 @@ export default function About() {
                   <span className="text-lg font-bold">{tRules("responsibility")}</span>
                 </div>
               </div>
+          
               
               <div className="bg-white border border-amber-100 rounded-b-2xl p-6">
                 <div className="grid grid-cols-1 gap-3">
