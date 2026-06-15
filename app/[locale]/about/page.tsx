@@ -11,7 +11,6 @@ export default function About() {
       <section className="relative py-24 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, #0f2942 0%, #1a4a7a 50%, #0ea5e9 100%)' }}>
         <div className="absolute top-[-60px] right-[-60px] w-72 h-72 rounded-full opacity-10" style={{background:'#38bdf8'}} />
         <div className="absolute bottom-[-40px] left-[-40px] w-48 h-48 rounded-full opacity-10" style={{background:'#38bdf8'}} />
-
         <div className="relative z-10 max-w-3xl mx-auto px-4 space-y-4">
           <h1 className="relative text-5xl font-extrabold text-white mb-3 tracking-tight">
             {t("title")}
