@@ -79,13 +79,14 @@ export default function HeroSwiper() {
           </SwiperSlide>
         ))}
 
+
+        
         <div className="swiper-button-prev-custom absolute left-4 top-1/2 z-20 -translate-y-1/2 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full items-center justify-center cursor-pointer transition-colors hidden sm:flex">
           <svg
             className="w-6 h-6 text-white"
             fill="none"
             stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+            viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -110,7 +111,6 @@ export default function HeroSwiper() {
           </svg>
         </div>
       </Swiper>
-
       <style jsx global>{`
         .swiper-pagination {
           bottom: 20px;
