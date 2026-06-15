@@ -114,9 +114,9 @@ export default function HeroSwiper() {
       <style jsx global>{`
         .swiper-pagination {
           bottom: 20px;
-          z-index: 20;
-        }
-        .swiper-pagination-bullet {
+          z-index: 20;}
+        
+          .swiper-pagination-bullet {
           background-color: rgba(255, 255, 255, 0.5);
           width: 10px;
           height: 10px;
