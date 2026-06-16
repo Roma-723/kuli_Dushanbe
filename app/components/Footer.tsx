@@ -19,7 +19,6 @@ export default function Footer() {
                 className="rounded-lg object-contain"
               />
 
-
             </div>
             <div>
               <h3 className="text-xl font-bold tracking-wide text-white">
