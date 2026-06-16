@@ -19,6 +19,7 @@ export default function Footer() {
                 className="rounded-lg object-contain"
               />
 
+
               
             </div>
             <div>
