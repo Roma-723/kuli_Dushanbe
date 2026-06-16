@@ -21,7 +21,6 @@ export default function Footer() {
 
 
 
-
             </div>
             <div>
               <h3 className="text-xl font-bold tracking-wide text-white">
