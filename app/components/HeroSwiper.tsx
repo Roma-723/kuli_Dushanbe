@@ -17,7 +17,6 @@ interface Slide {
 
 export default function HeroSwiper() {
   const t = useTranslations("hero");
-
   const slides: Slide[] = [
     {
       image: "/images/img1.png",
@@ -35,7 +34,6 @@ export default function HeroSwiper() {
       subtitleKey: "subtitle",
     },
   ];
-
   return (
     <div className="w-full h-60 sm:h-125 relative overflow-hidden">
       <Swiper
